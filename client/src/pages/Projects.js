@@ -1,12 +1,31 @@
 import React from 'react';
-import Layout from '../layout/Layout.js';
+// Import context and provider
+import { MyContext } from '../Context';
 
 export default function Projects() {
   return (
-    <Layout>
-      <div>
-        Projets
-      </div>
-    </Layout>
+    <MyContext.Consumer>
+      {(context) => (
+        <div className="Projects">
+          {
+            (() => {
+              if (context.state.language === 'en') {
+                return (
+                  <div>
+                    Projects
+                  </div>
+                ) 
+              } else {
+                return (
+                  <div>
+                    Projets
+                  </div>
+                )
+              }
+            })()
+          }
+        </div>
+      )}
+    </MyContext.Consumer>
   )
 }
