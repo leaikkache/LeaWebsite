@@ -7,9 +7,9 @@ import Summaries from './pages/Summaries';
 import Letters from './pages/Letters';
 import Prices from './pages/Prices';
 import Partners from './pages/Partners';
-import { MyContext } from './Context'
-
+import { MyContext } from './Context';
 import {Route} from "react-router-dom";
+import './stylesheets/Fonts.css';
 
 function App() {
   return (

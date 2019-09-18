@@ -1,0 +1,89 @@
+.Home {
+  background-color:#E68D51;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size:1.8rem;
+  align-items: center;
+  color:white;
+}
+
+.Home .bold{
+  font-weight: bold;
+  border-bottom: 7px solid transparent;
+  margin-bottom: -7px;
+  border-image: url("/images/underline.png") 16 stretch;
+}
+
+.Home .headline{
+  font-size:4rem;
+  font-family: 'Dancing Script', cursive;
+  margin:0%
+}
+
+.Home .main-sentence{
+  font-size:2.5rem
+}
+
+/* FIRST PART */
+
+.Home .intro-section {
+  background-color: #E68D51;
+  display:flex;
+  justify-content: center;
+  width:100%
+}
+
+.Home .about-section{
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center
+}
+
+.Home .about-section p {
+  width:80%
+}
+
+/* SECOND PART */
+
+.Home .goals-section{
+  width: 100%
+}
+
+.Home .goals-section-container{
+  width:100%;
+  background-color: #EF6366;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.Home .goals-section-container ul {
+  display:flex;
+  margin:0;
+  padding:0
+}
+
+.Home .goals-section-container ul li {
+  width:25%;
+  list-style: none;
+  padding:2%
+}
+
+
+@media (max-width:750px) {
+
+  .Home .goals-section-container ul {
+    flex-wrap: wrap;
+  }
+
+  .Home .goals-section-container ul li {
+    width:100%;
+  }
+}
+
+.Home .goals-section-container ul li img {
+  width:30%
+}
+
