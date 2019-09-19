@@ -1,34 +1,38 @@
+.About {
+  display:flex;
+  width:100%;
+  background-color:#F9B470;
+  color:white;
+}
+
+.Bio {
+  width:30%;
+  font-size:1.8rem;
+  color:white;
+  padding: 0 3%;
+  text-align: center
+}
+
 .Projects {
-  display:flex;
-  flex-direction: column;
-  width:100%;
-  justify-content: center;
-  align-items: center
+  width:70%
 }
 
-.Projects .hexagons-container{
-  display:flex;
-  flex-wrap: wrap;
-  width:100%;
+.Projects .headline, .Bio .headline{
+  font-size:4rem;
+  font-family: 'Dancing Script', cursive;
+  margin:0% 0% 3% 0%;
+  text-align: center
 }
 
-.Projects h1{
+.Projects a {
+  text-decoration: none;
+  color:white
+}
+
+.Projects .project-container{
   width:100%
 }
 
-.Projects .hexagon {
-  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
-  background: url("/images/earsketch.png") no-repeat;
-  background-size: cover;
-  margin: 10px 20px;
-  height: 150px;
-  width: 150px;
-  float: left;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  padding:5%;
-  text-align: center;
-  font-size:35px;
-  font-weight: bold;
+.Projects .project-container img{
+  width: 100%
 }

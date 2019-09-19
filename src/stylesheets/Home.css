@@ -53,10 +53,11 @@
 
 .Home .goals-section-container{
   width:100%;
-  background-color: #F9B470;
+  background-color: #F49371;
   display: flex;
   justify-content: center;
   text-align: center;
+  margin:5% 0
 }
 
 .Home .goals-section-container ul {

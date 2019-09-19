@@ -6,7 +6,14 @@ import * as serviceWorker from './serviceWorker';
 import {BrowserRouter as Router} from "react-router-dom";
 import { MyProvider } from './Context';
 
-ReactDOM.render(<MyProvider> <Router> <App /> </Router> </MyProvider>, document.getElementById('root'));
+ReactDOM.render(
+  <MyProvider> 
+    <Router> 
+      <App /> 
+    </Router> 
+  </MyProvider>, 
+  document.getElementById('root')
+);
 
 serviceWorker.unregister();
 
