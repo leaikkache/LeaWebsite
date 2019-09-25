@@ -3,18 +3,33 @@
   width:100%;
   background-color:#F9B470;
   color:white;
+  flex-wrap: wrap
 }
 
 .Bio {
-  width:30%;
+  width:100%;
   font-size:1.8rem;
   color:white;
+  text-align: center;
   padding: 0 3%;
-  text-align: center
 }
 
 .Projects {
-  width:70%
+  width:100%
+}
+
+@media (min-width:1050px) {
+
+  .About {
+    flex-wrap: nowrap
+  }
+  .Bio {
+    width:50%
+  }
+
+  .Projects {
+    width:50%
+  }
 }
 
 .Projects .headline, .Bio .headline{
