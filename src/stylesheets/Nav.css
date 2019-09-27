@@ -277,3 +277,41 @@ nav {
   transform: scale(0.9);
   transition-duration: 0s;
 }
+
+@media (max-width:600px){
+  .circular-menu {
+    display:none
+  }
+}
+
+.overlay-menu {
+  height: 100%;
+  width: 0%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  display:flex;
+  flex-direction: column
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+@media (min-width:600px){
+  .hamburger-menu {
+    visibility:hidden
+  }
+}
+
+.overlay-menu-open {
+  width: 100%;
+}

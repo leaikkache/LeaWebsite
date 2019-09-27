@@ -8,20 +8,25 @@ class Nav extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      open: false,
+      circularOpen: false,
       french: true,
+      hamburgerMenu: false
     }
-
-    this.toggleOpen = this.toggleOpen.bind(this);
+    this.toggleCircularMenu = this.toggleCircularMenu.bind(this);
     this.toggleLanguage = this.toggleLanguage.bind(this);
+    this.toggleHamburgerMenu = this.toggleHamburgerMenu.bind(this)
   }
 
-  toggleOpen() {
-    this.setState({open: !this.state.open});
+  toggleCircularMenu() {
+    this.setState({circularOpen: !this.state.circularOpen});
   }
 
   toggleLanguage() {
     this.setState({french: !this.state.french})
+  }
+
+  toggleHamburgerMenu () {
+    this.setState({hamburgerMenu: !this.state.hamburgerMenu})
   }
 
   render() {
@@ -37,8 +42,23 @@ class Nav extends Component {
             <img src="images/logo.png" alt=""/>
           </Link>
         </div>
-        <div></div>
-        <div onClick={this.toggleOpen} className={this.state.open ? 'circular-menu top-right open' : 'circular-menu top-right'}>         
+        <span style={{fontSize:"30px", cursor:"pointer"}} 
+        className={this.state.hamburgerMenu ? "hamburger-menu open" : "hamburger-menu"} 
+        onClick={this.toggleHamburgerMenu}>
+          &#9776;
+        </span>
+        <div className={this.state.hamburgerMenu ? "overlay-menu overlay-menu-open" : "overlay-menu"} >
+          <div className="closebtn" onClick={this.toggleHamburgerMenu}>
+            &times;
+          </div>
+          <div class="overlay-content">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+        <div onClick={this.toggleCircularMenu} className={this.state.circularOpen ? 'circular-menu top-right open' : 'circular-menu top-right'}>         
           <Link className="link disc l0 rotate" to="/partenaires">
             {
               (() => {
