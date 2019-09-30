@@ -4,6 +4,7 @@ body {
   font-family: 'Cabin Condensed', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:#F9B470
 }
 
 code {

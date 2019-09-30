@@ -1,6 +1,8 @@
 import React from 'react';
 // Import context and provider
 import { MyContext } from '../Context';
+import '../stylesheets/Headline.css';
+import "../stylesheets/Manifesto.css";
 
 export default function Manifesto() {
   return (
@@ -11,19 +13,35 @@ export default function Manifesto() {
             (() => {
               if (context.state.language === 'en') {
                 return (
-                  <div>
+                  <h1 className="headline">
                     Manifesto
-                  </div>
+                  </h1>
                 ) 
               } else {
                 return (
-                  <div>
+                  <h1 className="headline">
                     Manifeste
-                  </div>
+                  </h1>
                 )
               }
             })()
           }
+          <section>
+            {
+              (() => {
+                if (context.state.language === 'en') {
+                  return (
+                    <h2>Under construction ...</h2>
+                  ) 
+                } else {
+                  return (
+                    <h2>En construction ...</h2>
+                  )
+                }
+              })()
+            }
+            <img src="images/coming.svg" alt=""/>
+          </section>
         </div>
       )}
     </MyContext.Consumer>

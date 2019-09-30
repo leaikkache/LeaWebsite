@@ -1,7 +1,6 @@
 .About {
   display:flex;
   width:100%;
-  background-color:#F9B470;
   color:white;
   flex-wrap: wrap
 }
@@ -30,13 +29,6 @@
   .Projects {
     width:50%
   }
-}
-
-.Projects .headline, .Bio .headline{
-  font-size:4rem;
-  font-family: 'Dancing Script', cursive;
-  margin:0% 0% 3% 0%;
-  text-align: center
 }
 
 .Projects a {

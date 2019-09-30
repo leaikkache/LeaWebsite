@@ -28,7 +28,6 @@
 /* FIRST PART */
 
 .Home .intro-section {
-  background-color: #F49371;
   display:flex;
   justify-content: center;
   width:100%
@@ -53,7 +52,6 @@
 
 .Home .goals-section-container{
   width:100%;
-  background-color: #F49371;
   display: flex;
   justify-content: center;
   text-align: center;

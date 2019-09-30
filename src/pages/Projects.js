@@ -3,6 +3,7 @@ import React from 'react';
 import { MyContext } from '../Context';
 import Timeline from '../components/timeline'
 import '../stylesheets/Projects.css';
+import '../stylesheets/Headline.css';
 import { StyleRoot } from 'radium'
 
 export default function Projects() {

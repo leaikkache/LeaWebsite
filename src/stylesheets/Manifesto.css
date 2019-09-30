@@ -1,0 +1,17 @@
+.Manifesto {
+  display:flex;
+  flex-direction: column;
+  width:100%;
+  align-items: center;
+  color:white;
+  flex-wrap: wrap;
+  text-align: center
+}
+
+.Manifesto section {
+  width: 100%
+}
+
+.Manifesto img {
+  width: 20%
+}
