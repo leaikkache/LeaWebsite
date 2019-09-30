@@ -1,6 +1,7 @@
 import React from 'react';
 // Import context and provider
 import { MyContext } from '../Context';
+import "../stylesheets/Headline.css"
   
 export default function Summaries() {
   return (
@@ -11,15 +12,15 @@ export default function Summaries() {
             (() => {
               if (context.state.language === 'en') {
                 return (
-                  <div>
+                  <h1 className="headline">
                     Summaries
-                  </div>
+                  </h1>
                 ) 
               } else {
                 return (
-                  <div>
+                  <h1 className="headline">
                     Résumés
-                  </div>
+                  </h1>
                 )
               }
             })()
