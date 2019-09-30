@@ -70,18 +70,7 @@ class Nav extends Component {
               })()
             }
           </Link>
-          <Link className="link disc l1 rotate" to="/prestations">
-            {
-              (() => {
-                if (this.props.context.state.language === 'en') {
-                  return <div>Prices</div>
-                } else {
-                  return <div>Prestations</div>
-                }
-              })()
-            }
-          </Link>
-          <Link className="link disc l2 rotate" to="/lettres">
+          <Link className="link disc l1 rotate" to="/lettres">
             {
               (() => {
                 if (this.props.context.state.language === 'en') {
@@ -92,7 +81,7 @@ class Nav extends Component {
               })()
             }
           </Link>
-          <Link className="link disc l3 rotate" to="/résumés">
+          <Link className="link disc l2 rotate" to="/résumés">
             {
               (() => {
                 if (this.props.context.state.language === 'en') {
