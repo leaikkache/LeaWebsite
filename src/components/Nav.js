@@ -48,7 +48,7 @@ class Nav extends Component {
           &#9776;
         </span>
         <div className={this.state.hamburgerMenu ? "overlay-menu overlay-menu-open" : "overlay-menu"} >
-          <div className="closebtn" onClick={this.toggleHamburgerMenu}>
+          <div className="close-btn" onClick={this.toggleHamburgerMenu}>
             &times;
           </div>
           <div class="overlay-content">
