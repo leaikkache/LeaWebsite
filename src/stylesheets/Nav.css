@@ -307,7 +307,6 @@ nav {
   top: 25%;
   width: 100%;
   text-align: center;
-  margin-top: 30px;
   display:flex;
   flex-direction: column;
   align-items: center
@@ -321,4 +320,9 @@ nav {
 
 .overlay-menu-open {
   width: 100%;
+}
+
+.link-hamburger {
+  text-decoration: none;
+  font-size: 1.5rem;
 }

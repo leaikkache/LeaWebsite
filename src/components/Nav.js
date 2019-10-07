@@ -52,10 +52,61 @@ class Nav extends Component {
             &times;
           </div>
           <div class="overlay-content">
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
+            <Link className="link-hamburger" onClick={this.toggleHamburgerMenu} to="/projets">
+              {
+                (() => {
+                  if (this.props.context.state.language === 'en') {
+                    return <p>Bio/Projects</p>
+                  } else {
+                    return <p>Bio/Projets</p>
+                  }
+                })()
+              }
+            </Link>
+            <Link className="link-hamburger" onClick={this.toggleHamburgerMenu} to="/manifeste">
+              {
+                (() => {
+                  if (this.props.context.state.language === 'en') {
+                    return <p>Manifesto</p>
+                  } else {
+                    return <p>Manifeste</p>
+                  }
+                })()
+              }
+            </Link>
+            <Link className="link-hamburger" onClick={this.toggleHamburgerMenu} to="/résumés">
+              {
+                (() => {
+                  if (this.props.context.state.language === 'en') {
+                    return <p>Summaries</p>
+                  } else {
+                    return <p>Résumés</p>
+                  }
+                })()
+              }
+            </Link>
+            <Link className="link-hamburger" onClick={this.toggleHamburgerMenu} to="/lettres">
+              {
+                (() => {
+                  if (this.props.context.state.language === 'en') {
+                    return <p>Letters</p>
+                  } else {
+                    return <p>Lettres</p>
+                  }
+                })()
+              }
+            </Link>
+            <Link className="link-hamburger" onClick={this.toggleHamburgerMenu} to="/partenaires">
+              {
+                (() => {
+                  if (this.props.context.state.language === 'en') {
+                    return <p>Partners</p>
+                  } else {
+                    return <p>Partenaires</p>
+                  }
+                })()
+              }
+            </Link>
           </div>
         </div>
         <div onClick={this.toggleCircularMenu} className={this.state.circularOpen ? 'circular-menu top-right open' : 'circular-menu top-right'}>         
