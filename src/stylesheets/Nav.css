@@ -1,6 +1,5 @@
 nav {
   background-color:#F9B470;
-  height:150px;
   width: 100%;
   display:flex;
   justify-content: space-between;
@@ -295,26 +294,40 @@ nav {
   background-color: rgba(244, 147, 112, 0.9);
   overflow-x: hidden;
   display:flex;
-  flex-direction: column
+  flex-direction: column;
 }
 
 .close-btn {
-  align-self: flex-end
+  align-self: flex-end;
+  color:white;
+  font-size:75px;
+  height:50px;
+  display:flex;
+  align-items: center;
+  padding-right:30px
 }
 
 .overlay-content {
   position: relative;
-  top: 25%;
   width: 100%;
-  text-align: center;
-  display:flex;
+  height:100%;
+  display: flex;
   flex-direction: column;
-  align-items: center
+  align-items: center;
+  justify-content: center
+}
+
+.hamburger-menu {
+  color:white
 }
 
 @media (min-width:600px){
   .hamburger-menu {
     visibility:hidden
+  }
+
+  nav {
+    height:150px;
   }
 }
 
@@ -324,5 +337,6 @@ nav {
 
 .link-hamburger {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  color:white
 }
